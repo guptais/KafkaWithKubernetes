@@ -4,7 +4,7 @@ Follow the steps to [Setup] the local cluster.
 
 Or do these
 
-The Kubernetes package manager
+Use Helm, The Kubernetes package manager
 
 To begin working with Helm, run the ‘helm init’ command:
 
