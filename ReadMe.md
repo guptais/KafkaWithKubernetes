@@ -1,5 +1,12 @@
 ## Apache kafka on Kubernetes locally
 
+You can set up local kafka (Zookeeper & Broker or Bootstrap server) and support services (Schema Registry, Connect, control-Center, Rest proxy, ksql server) in the following ways:
+
+1) Using `Kafka binaries` for zookeeper, broker, console consumer and producer
+2) Using [Confluent images in docker] and use `ccloud` to connect to the cluster 
+3) Using [Debezium] images in Docker
+4) Using `Kubernetes` to run kafka cluster locally which is desribed in this readme.
+
 Follow the steps to [Setup] the local cluster. 
 
 Or do these
@@ -135,7 +142,8 @@ References:
 
 [How to login to kubernetes dashboard secret]
 
-
+[Debezium]: https://github.com/debezium/debezium-examples/tree/master/tutorial
+[Confluent images in docker]: https://github.com/confluentinc/cp-docker-images/tree/5.2.2-post/examples
 [Setup]: https://medium.com/@tsuyoshiushio/local-kafka-cluster-on-kubernetes-on-your-pc-in-5-minutes-651a2ff4dcde
 [How to setup a WebUI Dashboard]: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
 [How to login to kubernetes dashboard secret]: http://www.bennythejudge.com/blog/kubernetes/howtos/macos/2018/02/10/kubernetes-dashboard-secret.html
